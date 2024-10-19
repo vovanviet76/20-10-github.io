@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Điệp Chúc Mừng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .message-container {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 500px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            color: #e20d4d; /* Màu chữ */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Bóng chữ */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const messages = [
+                "Chúc chị nhím luôn xinh đẹp và Luôn giữ vững nụ cười trên môi chị nhé",
+                "Hy vọng chị nhím sẽ luôn tìm thấy niềm vui trong cuộc sống",
+                "Mong rằng mọi ước mơ của chị nhím sẽ trở thành hiện thực",
+                "Chúc chị nhím có một ngày 20-10 thật vui vẻ và ý nghĩa",
+            ];
+
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            const randomMessage = messages[randomIndex];
+
+            document.getElementById('congratulationsMessage').innerText = randomMessage;
+        }
+    </script>
+</head>
+<body>
+    <div class="message-container">
+        <h1>Chúc Mừng Ngày 20-10</h1>
+        <p id="congratulationsMessage"></p>
+        <a href="hết.html" class="button">Quay lại</a>
+    </div>
+</body>
+</html>
